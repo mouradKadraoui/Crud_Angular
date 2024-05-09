@@ -1,0 +1,17 @@
+<form (ngSubmit)="editProduct()" class="m-5 mx-auto" style="width: 700px;">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name Product</label>
+    <input type="text" class="form-control" id="name"  [(ngModel)]="product.name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="number" class="form-control" id="price" [(ngModel)]="product.price" name="price">
+  </div>
+
+  <div class="mb-3">
+    <label for="color" class="form-label">Color</label>
+    <input type="text" class="form-control" id="color" [(ngModel)]="product.color" name="color">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
